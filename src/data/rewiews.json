@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Amazing Service",
+    "company": {
+      "name": "Serene Living Products",
+      "logo": "https://i.ibb.co/DP9ZyPBf/photo-2025-05-14-09-00-06-5.jpg"
+    },
+    "review": "Sales Fortuna made managing sales easier and helped us focus on customers. Its tools have been crucial for our growth and client satisfaction.",
+    "reviewer": {
+      "name": "Ethan Morgan",
+      "position": "Founder and CEO",
+      "photo": "https://i.ibb.co/1ftn7bZP/photo-2025-05-14-09-00-06.jpg"
+    }
+  },
+  {
+    "title": "Outstanding Support",
+    "company": {
+      "name": "Starlight Creations",
+      "logo": "https://i.ibb.co/fzxfPB2D/photo-2025-05-14-09-00-06-4.jpg"
+    },
+    "review": "Sales Fortuna has made sales so much easier for us. It saves time, simplifies the whole process, and helps us land more deals without extra hassle.",
+    "reviewer": {
+      "name": "Olivia Hayes",
+      "position": "Owner",
+      "photo": "https://i.ibb.co/DPmXbcPG/photo-2025-05-14-09-00-06-3.jpg"
+    }
+  },
+  {
+    "title": "Highly Recommended",
+    "company": {
+      "name": "Opulent Living Group",
+      "logo": "https://i.ibb.co/Ld3x6hcr/photo-2025-05-14-09-00-06-6.jpg"
+    },
+    "review": "Sales Fortuna has simplified our lead generation, helping us attract qualified prospects effortlessly and drive consistent growth.",
+    "reviewer": {
+      "name": "Alexander Reed",
+      "position": "Co-Founder",
+      "photo": "https://i.ibb.co/KzVfWcFg/photo-2025-06-08-08-35-34.jpg"
+    }
+  },
+  {
+    "title": "Outing Support",
+    "company": {
+      "name": "Starlight",
+      "logo": "https://i.ibb.co/fzxfPB2D/photo-2025-05-14-09-00-06-4.jpg"
+    },
+    "review": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
+    "reviewer": {
+      "name": "Olivia 2",
+      "position": "CTO",
+      "photo": "https://i.ibb.co/DPmXbcPG/photo-2025-05-14-09-00-06-3.jpg"
+    }
+  },
+  {
+    "title": "Recommended",
+    "company": {
+      "name": "GreenWave",
+      "logo": "https://i.ibb.co/Ld3x6hcr/photo-2025-05-14-09-00-06-6.jpg"
+    },
+    "review": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "reviewer": {
+      "name": "Alexander Reed 2",
+      "position": "Marketing Manager",
+      "photo": "https://i.ibb.co/KzVfWcFg/photo-2025-06-08-08-35-34.jpg"
+    }
+  }
+]
