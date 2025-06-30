@@ -1,7 +1,11 @@
 @use "../../styles/variables.scss" as *;
+@use "../../styles/mixins.scss" as *;
 
 $card-margins: 15px;
 
+.slider {
+  padding-block: 20px;
+}
 .slider_container {
   display: flex;
   align-items: center;
@@ -14,8 +18,8 @@ $card-margins: 15px;
   align-items: center;
   justify-content: center;
   padding: 0;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   border: 1px solid $accent-text-color;
   border-radius: 50%;
 
@@ -24,7 +28,11 @@ $card-margins: 15px;
     width: 40px;
   }
 
-  @media (min-width: 769px) {
+  @include on-laptop {
+    height: 50px;
+    width: 50px;
+  }
+  @include on-desktop {
     height: 68px;
     width: 68px;
   }
@@ -40,37 +48,48 @@ $card-margins: 15px;
   width: 230px;
   height: fit-content;
   margin-inline: 5px;
-  min-height: 400px;
 
   @media (min-width: 481px) {
     width: 500px;
     max-width: 70vw;
-    padding-inline: 20px;
-    min-height: 440px;
+    margin-inline: 20px;
   }
 
-  @media (min-width: 769px) {
+  @include on-tablet {
     width: 800px;
-    padding-inline: 24px;
+    max-width: 80vw;
+    margin-inline: 24px;
   }
 
-  @media (min-width: 1025px) {
+  @include on-laptop {
     width: 1172px;
-    padding-inline: 27px;
+    margin-inline: 27px;
   }
 }
 
 .slider_track {
   position: relative;
   width: 100%;
-  min-height: 400px;
+  height: 400px;
 
-  @media (min-width: 481px) {
-    min-height: 440px;
+  @media (min-width: 480px) {
+    height: 300px;
   }
 
-  @media (min-width: 769px) {
-    height: 500px;
+  @include on-tablet {
+    height: 400px;
+  }
+
+  @include on-laptop {
+    height: 502px;
+  }
+
+  @media (min-width: 1150px) {
+    height: 502px;
+  }
+
+  @include on-desktop {
+    height: 502px;
   }
 }
 
@@ -80,20 +99,16 @@ $card-margins: 15px;
   transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 0;
   pointer-events: none;
-  width: 380px;
+  width: 100%;
   min-height: 300px;
   height: 100%;
 
-  @media (max-width: 480px) {
-    width: 100%;
+  @include on-tablet {
+    width: calc((100% - #{$card-margins}) / 2);
   }
 
-  @media (min-width: 481px) {
-    width: calc((100% - $card-margins) / 2);
-  }
-
-  @media (min-width: 769px) {
-    width: calc((100% - $card-margins * 2) / 3);
+  @include on-laptop {
+    width: calc((100% - #{$card-margins * 2}) / 3);
   }
 }
 
@@ -105,14 +120,14 @@ $card-margins: 15px;
 }
 
 .visible-1 {
-  transform: translateX(calc(100% + $card-margins));
+  transform: translateX(calc(100% + #{$card-margins}));
   opacity: 1;
   z-index: 2;
   pointer-events: auto;
 }
 
 .visible-2 {
-  transform: translateX(calc(200% + $card-margins * 2));
+  transform: translateX(calc(200% + #{$card-margins * 2}));
   opacity: 1;
   z-index: 1;
   pointer-events: auto;
@@ -142,7 +157,7 @@ $card-margins: 15px;
     height: 10px;
     background-color: $main-text-color;
     border-radius: 50%;
-    transition: backgroundColor 0.5s ease;
+    transition: background-color 0.5s ease;
   }
 
   &.active::after {

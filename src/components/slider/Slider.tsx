@@ -28,9 +28,9 @@ export const Slider: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    if (width <= 480) {
+    if (width < 640) {
       setItemsPerPAge(1);
-    } else if (width <= 768) {
+    } else if (width < 1024) {
       setItemsPerPAge(2);
     } else {
       setItemsPerPAge(3);

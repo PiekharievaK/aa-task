@@ -1,3 +1,5 @@
+@use "./styles/mixins.scss" as *;
+
 #root {
   margin: 0 auto;
   text-align: center;
@@ -8,9 +10,6 @@
   font-weight: 700;
   @media (min-width: 481px) {
     font-size: 48px;
-  }
-
-  @media (min-width: 769px) {
   }
 }
 .container {
